@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  background-position: fixed;
+}
+#main {
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+#title {
+  margin: 50px 0 10px 0;
+}
+#description {
+  font-style: italic;
+  margin: 0;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 20px;
+  width: 50%;
+  min-height: 500px;
+  background: #07fb;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+input {
+  width: 95%;
+  margin-top: 0;
+  border-radius: 0.3rem;
+  border: 0;
+  padding: 10px;
+}
+label p {
+  margin: 50px 0px 0px 0px;
+  font-size: 18px;
+  font-family: Verdana;
+}
+#dropdown {
+  padding: 10px;
+  border: none;
+  border-radius: 0.3rem;
+  width: 97%;
+}
+option {
+  padding: 10px;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+#my {
+  margin: 20px 0px 20px 0px;
+
+  font-size: 18px;
+  font-family: verdana;
+}
+
+label[for="definitely"] p, label[for="maybe"] p, label[for="not_sure"] p{
+    margin:0;
+    margin-top:5px;
+    margin-left:50px;
+    padding: 0;
+    height: 5px;
+    font-size: 16px;
+}
+input[type="radio"], input[type="checkbox"]{
+    margin-top: 5px;
+    height: 25px;
+    width:25px;
+}
+textarea{
+border:0;
+border-radius: 0.3rem;
+}
+#submit{
+    padding: 10px;
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 0.3rem;
+    font-size: 18px;
+    background:#7fbbff;
+    color: #fff;
+}

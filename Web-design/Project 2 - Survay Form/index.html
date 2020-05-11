@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <img src="image/homepage-wave-bg.svg" alt="Background Image" />
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form id="survey-form">
+        <label for="name-label" id="name-label">
+          <p>Name</p>
+          <br />
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            id="name"
+            required
+          />
+        </label>
+        <label for="email-label" id="email-label">
+          <p>Email</p>
+          <br />
+          <input
+            type="email"
+            placeholder="Enter your Email"
+            name="email"
+            id="email"
+            required
+          />
+        </label>
+        <label for="number-label" id="number-label">
+          <p>Age(Optional)</p>
+          <br />
+          <input
+            type="number"
+            placeholder="Age"
+            name="number"
+            id="number"
+            min="10"
+            max="99"
+          />
+        </label>
+        <p id="my">Which option best describes your current role?</p>
+        <select name="dropdown" id="dropdown">
+          <option value="current">Select Current Role</option>
+          <option value="Student">Student</option>
+        </select>
+        <p id="my">Would you recommend freeCodeCamp to a friend?</p>
+        <label for="definitely">
+          <p>Definitely</p>
+          <input
+            type="radio"
+            checked
+            value="definitely"
+            name="rec"
+            id="definitely"
+          />
+        </label>
+        <label for="maybe">
+          <p>Maybe</p>
+          <input type="radio" value="maybe" name="rec" id="maybe" />
+        </label>
+        <label for="not_sure">
+          <p>Not sure</p>
+          <input type="radio" value="not_sure" name="rec" id="not_sure" />
+        </label>
+        <p id="my">What is your favorite feature of freeCodeCamp?</p>
+        <select name="dropdown" id="dropdown">
+          <option value="current">Select Current Role</option>
+          <option value="Student">Student</option>
+        </select>
+        <label for="maybe">
+          <p>Front-end Projects</p>
+          <input type="checkbox" value="maybe" name="rec" id="maybe" />
+        </label>
+        <label for="not_sure">
+          <p>Back-end Projects</p>
+          <input type="checkbox" value="not_sure" name="rec" id="not_sure" />
+        </label>
+        <label for="definitely">
+          <p>Challenges</p>
+          <input
+            type="checkbox"
+            value="definitely"
+            name="rec"
+            id="definitely"
+          />
+        </label>
+        <p id="my">Any comments or suggestions?</p>
+        <textarea name="comment" id="text" cols="30" rows="10"></textarea>
+        <button  id="submit">Submit</button>
+    </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
