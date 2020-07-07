@@ -50,8 +50,8 @@ body{
   padding: 10px;
   margin: 100px auto;
 }
-h2 {
-  font-size:26px;
+#title {
+  font-size:28px;
 }
 #email {
   width: 100%;

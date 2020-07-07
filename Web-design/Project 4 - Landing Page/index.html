@@ -4,11 +4,209 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FCC: Product Landing Page</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <style>
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: arial;
+}
+body{
+  background: #eee;
+
+}
+#header {
+  width: 100%;
+  height: 50px;
+  background: #eee;
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+#header #header-img {
+  max-width: 100%;
+  height: auto;
+}
+#nav-bar {
+  margin-right: 20px;
+}
+.nav-link {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+#features {
+  width: 100%;
+  height: calc(100vmin - 50px);
+  background: #eee;
+  position: absolute;
+  bottom: 0;
+}
+#form {
+  min-height: 150px;
+  width: 400px;
+  padding: 10px;
+  margin: 100px auto;
+}
+#title {
+  font-size:28px;
+}
+#email {
+  width: 100%;
+  padding: 10px;
+  height: 35px;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid rgb(206, 158, 0);
+  margin: 20px 0;
+}
+#email:focus {
+  outline: 1px solid rgb(206, 158, 0);
+}
+
+#submit {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid rgb(206, 158, 0);
+  border-radius: 0.6rem;
+  background: rgb(206, 110, 0);
+  color: #ffff;
+}
+#feature {
+  width: 75%;
+  min-height: 200px;
+  margin:-70px auto;
+  padding: 10px;
+}
+.fa {
+  color: #ffc00f;
+}
+#feature-1,
+#feature-2,
+#feature-3 {
+  display: flex;
+  align-items: center;
+  margin: 30px 20px;
+}
+.feature-info{
+    margin-left: 20px;
+    justify-self: center;
+}
+
+.feature-info p{
+    margin-top: 0.5rem;
+}
+.video-container{
+ width:100%;
+height: 95vh;
+position: absolute;
+top: 110%;
+z-index: 0;
+}
+#video{
+  height: 70%;
+  width:55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pricing{
+  width:100%;
+ height: 95vh;
+ position: absolute;
+ top: 210%;
+ z-index: 0;
+ }
+
+.prices{
+  height: 500px;
+  width: 90%;
+  padding: 10px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.price-1,.price-2,.price-3{
+  width: 330px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #333;
+}
+.prices h3{
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+}
+.prices h4{
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+}
+.prices p{
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  line-height: 35px;
+}
+.select{
+  border: 0;
+  padding: 15px 25px;
+  background: #ffc00f;
+  margin:20px 110px;
+}
+@media screen and (max-width: 990px) {
+  #header {
+    flex-direction: column;
+    position: relative;
+  }
+ 
+  #nav-bar{
+      width: 100vw;
+  }
+  .nav-link {
+    display: block;
+   width: 100%;
+  }
+  .video-container{
+    top: 150%;
+  }
+  .pricing{
+    top: 300%;
+  }
+  #video{
+    width: 90%;
+    height: 60%;
+  }
+  .prices{
+    flex-direction: column;
+  }
+  .price-2,.price-3{
+    margin-top: 30px;
+  }
+ 
+}
+
+    </style>
   </head>
   <body>
     <header id="header">
@@ -26,7 +224,7 @@
     </header>
     <div id="features">
       <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <h2>Handcrafted, home-made masterpieces</h2>
+        <h1 id="title">Handcrafted, home-made masterpieces</h1>
         <input
           type="email"
           name="email"
