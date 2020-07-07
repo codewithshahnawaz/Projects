@@ -12,31 +12,191 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Open Sans", Arial, sans-serif;
       }
+      .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: relative;
+        font-family:arial;
+      }
+      h1{
+font-size: 28px;
+      }
+      
+      #leftSide {
+        width: 300px;
+        position: fixed;
+        border-right: 2px;
+        border-right-color: rgb(202, 202, 202);
+        border-right-style:solid;
+        left: 0;
+        top: 0;
+height: 100%;
+      }
+      #main-doc {
+        width: calc(100% - 300px);
+          /* background: gold; */
+        position: absolute;
+        right: 0;
+        padding: 10px;
+      }
+      #main-doc header {
+        font-size:30px;
+      }
+      .main-section{
+        min-height: 150px;
+        padding:20px
+      }
+  .main-section header{
+    padding:15px 5px;
+  }      
+  .main-section p{
+    color: #bbb;
+    padding:10px;
+    margin-left: 20px;
+    
+  }
+  .main-section ul{
+    margin:20px 30px;
+  }
+  .main-section ul li{
+    height: 20px;
+    padding:35px 0;
+    color: #bbb;
+  }
+  code{
+    min-width: 50%;
+    background:rgb(233, 232, 232);
+    display:inline-block;
+    min-height: 20px;
+    padding:20px;
+    margin:10px 30px;
+    border-radius: 0.2rem;
+    color: rgb(117, 117, 117);
+  }
+#Reference ul{
+margin:0px 30px;
+} 
+#leftSide h1{
+  padding: 10px;
+  margin: 10px;
+}
+ #navbar {
+  min-height: 300px;
+   margin-top: 30px;
+ }
+ 
+ #navbar a{
+  display:block;
+  text-decoration: none;
+  color: black;
+  height: 50px;
+  text-align: center;
+  border:1px solid #eee;
+  width:100%;
+  line-height:50px;
+ }
+    @media (max-width:860px){
+      .container{
+        flex-direction:column;
+      }
+      #leftSide{
+        position: relative;
+        width:100%;
+
+      }
+      #main-doc{
+
+        position: relative;
+        width:100%;
+      }
+    }
     </style>
   </head>
   <body>
-    <div class="container">
+    <section class="container">
       <aside id="leftSide">
         <h1>JS Documentation</h1>
+
+        <nav id="navbar">
+          <header>
+          <a class="nav-link" href="#introduction">Introduction</a>
+          <a class="nav-link" href="#Hello_World">Hello World</a>
+          <a class="nav-link" href="#Data_Types">Data Types</a>
+          <a class="nav-link" href="#Variables">Variables</a>
+          <a class="nav-link" href="#Reference">Reference</a>
+        </header>
+        </nav>
       </aside>
       <main id="main-doc">
-        <div class="main-section">
-          <h2 id="header">Introduction</h2>
-        </div>
-        <div class="main-section">
-          <h2 id="header"></h2>
-        </div>
-        <div class="main-section">
-          <h2 id="header"></h2>
-        </div>
-        <div class="main-section">
-          <h2 id="header"></h2>
-        </div>
-        <div class="main-section">
-          <h2 id="header"></h2>
-        </div>
+        <section class="main-section" id="introduction">
+          <header>Introduction</header>
+          <p>
+            JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+          </p>
+          <p>
+            JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, aliquid.
+          </p>
+          <ul>
+            <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+            <li>
+              Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
+            </li>
+          </ul>
+        </section>
+        <section class="main-section" id="Hello_World">
+          <header>Hello World</header>
+          <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+          <code class="code">
+            function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");
+          </code>
+          <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+        </section>
+        <section class="main-section" id="Data_Types">
+          <header>Data Types</header>
+          <p>The latest ECMAScript standard defines seven data types:</p>
+          <p>These  are some of The data types</p>
+         <ul>
+           <li>Boolean</li>
+           <li>Number</li>
+           <li>String</li>
+           <li>null</li>
+         </ul>
+         
+          <code class="code">
+            var boolean = true;
+          </code>  
+          <br>
+          <code class="code">
+            var number = 123;
+          </code>  
+          <br>
+          <code class="code">
+            var string = "I am string";
+          </code> 
+        </section>
+        <section class="main-section" id="Variables">
+          <header >Variables</header>
+          <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+        <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+      <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>  
+      <code class="code">
+        var I = "ME"
+        console.log(I)
+      </code>  
+    </section>
+        <section class="main-section" id="Reference">
+          <header>Reference</header>
+          <ul><li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></li></ul>
+        </section>
       </main>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
