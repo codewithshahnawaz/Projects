@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC: Personal Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      #navbar {
+        min-height: 60px;
+        padding: 10px;
+        background: #a70b23;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+      }
+      #navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #navbar ul li {
+        width: 100px;
+        height: 60px;
+        text-align: center;
+        height: 100%;
+      }
+      #navbar ul li a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        font-family: verdana;
+      }
+      #main {
+        width: 100%;
+        background: #eee;
+        margin-top: 60px;
+      }
+      #welcome-section {
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: justify;
+        font-size: 34px;
+      }
+      #welcome-section h1,
+      h2 {
+        font-style: oblique;
+        font-weight: lighter;
+        font-family: verdana;
+      }
+      #welcome-section h1 {
+        color: #fff;
+      }
+      #welcome-section h2 {
+        color: #a70b23;
+      }
+
+      #projects {
+        width: 100%;
+        height: 100vh;
+        background: #0088d6;
+        color: #fff;
+        position: absolute;
+      }
+      #projects h2 {
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        font-size: 36px;
+        text-decoration: underline;
+
+      }
+      #project-gallery {
+        display: flex;
+        width: 100%;
+        min-height: 300px;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+      }
+      .project-tile {
+        min-height: 420px;
+        width: 350px;
+        background: #333;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .project-tile h2 {
+        font-size: 26px !important;
+        margin: 0 !important;
+      }
+      .getmethere {
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        padding: 5px;
+        justify-self: flex-end;
+        border: 0;
+        background: gold;
+        line-height: 40px;
+        font-family: verdana;
+        color: #333;
+        text-decoration: none;
+      }
+      #contact {
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        position: absolute;
+        bottom: -200%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      #contact h2 {
+        padding: 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 36px;
+      }
+      #contact #profile-link{
+text-decoration: none;
+text-transform:uppercase;
+display: inline-block;
+background:#333;
+padding:20px;
+color: #fff;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      @media screen and (max-width: 989px) {
+        
+        #main {
+          margin: 0;
+        }
+        #welcome-section {
+          font-size: 3vh;
+        }
+        #navbar {
+          width: 100%;
+        }
+        #projects {
+          height:100%;
+        }
+        #project-gallery {
+          position: absolute;
+          flex-direction: column;
+        }
+        .project-tile {
+        
+          width: 80%;
+          margin: 30px 0;
+        }
+        #contact{
+    position: absolute;
+    bottom: -370%;
+}
+       
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a class="nav-link" href="#welcome-section">About</a></li>
+        <li><a class="nav-link" href="#projects">Work</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main id="main">
+      <section id="welcome-section">
+        <h1>Hey I am Jone Doe</h1>
+        <h2>a Web developer</h2>
+      </section>
+      <section id="projects">
+        <h2>These are some of my projects</h2>
+        <div id="project-gallery">
+          <div class="project-tile">
+            <div class="project-tile-img">
+              <img src="https://picsum.photos/400/350" alt="" />
+            </div>
+            <h2 class="project-title">Item #1</h2>
+            <a
+              href="https://codewithshahnawaz.github.io/Projects/Web-design/Project%204%20-%20Technical%20Document/index.html"
+              class="getmethere"
+              >Check</a
+            >
+          </div>
+          <div class="project-tile">
+            <div class="project-tile-img">
+              <img src="https://picsum.photos/400/350" alt="" />
+            </div>
+            <h2 class="project-title">Item #2</h2>
+            <a
+              href="https://codewithshahnawaz.github.io/Projects/Web-design/Project%204%20-%20Technical%20Document/index.html"
+              class="getmethere"
+              >Check</a
+            >
+          </div>
+          <div class="project-tile">
+            <div class="project-tile-img">
+              <img src="https://picsum.photos/400/350" alt="" />
+            </div>
+            <h2 class="project-title">Item #3</h2>
+            <a
+              href="https://codewithshahnawaz.github.io/Projects/Web-design/Project%204%20-%20Technical%20Document/index.html"
+              class="getmethere"
+              >Check</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Let's Work togather!</h2>
+        <a
+          href="https://github.com/codewithshahnawaz"
+          target="_blank"
+          id="profile-link"
+          >Check My Github Profile</a>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
