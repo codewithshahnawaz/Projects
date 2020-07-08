@@ -46,6 +46,7 @@ height: 100%;
         font-size:30px;
       }
       .main-section{
+        width:100%;
         min-height: 150px;
         padding:20px
       }
@@ -53,18 +54,20 @@ height: 100%;
     padding:15px 5px;
   }      
   .main-section p{
-    color: #bbb;
+    color: #333;
     padding:10px;
+    line-height:25px;
     margin-left: 20px;
     
   }
   .main-section ul{
     margin:20px 30px;
+    padding:0px;
   }
   .main-section ul li{
-    height: 20px;
-    padding:35px 0;
-    color: #bbb;
+    padding:30px 0;
+    color: #333;
+    line-height:25px;
   }
   code{
     min-width: 50%;
@@ -98,6 +101,13 @@ margin:0px 30px;
   width:100%;
   line-height:50px;
  }
+ #Data_Types ul li{
+      height: 10px;
+      margin:0px 25px;
+     }
+     #Data_Types ul{
+       margin-top:0px;
+     }
     @media (max-width:860px){
       .container{
         flex-direction:column;
@@ -105,13 +115,28 @@ margin:0px 30px;
       #leftSide{
         position: relative;
         width:100%;
-
+border: none;
       }
       #main-doc{
 
         position: relative;
         width:100%;
       }
+      #introduction ul{
+        min-height:300px;
+      }
+     code{
+       padding: 13px;
+width:calc(100% - 13px * 4);
+     }
+     #leftSide h1{
+       text-align: center;
+       margin:10px 0;
+       font-weight:200
+     }
+     #navbar{
+       margin-top:0px;
+     }
     }
     </style>
   </head>
@@ -193,7 +218,7 @@ margin:0px 30px;
     </section>
         <section class="main-section" id="Reference">
           <header>Reference</header>
-          <ul><li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></li></ul>
+          <ul><li>All the documentation in this page is taken from <a style="color: #333;" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></li></ul>
         </section>
       </main>
     </div>
