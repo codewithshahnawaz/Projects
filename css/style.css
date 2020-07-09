@@ -326,28 +326,9 @@ font-style: oblique;
   }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:768px){
   .profile_img{
-    top: calc(100vh - 90% - 50px);
+   display: none;
   }
 }
-@media screen and (max-width:360px){
-  .profile_img{
-    top: calc(100vh - 81%);
-  }
-}
-@media screen and (max-width:320px){
-  .profile_img{
-    top: calc(100vh - 85% - 50px);
-  }
-}
-@media screen and (max-width:420px){
-  .profile_img{
-    top: calc(100vh - 90% - 50px);
-  }
-}
-@media screen and (max-width:480px){
-  .profile_img{
-    top: calc(100vh - 89% - 50px);
-  }
-}
+
