@@ -325,3 +325,29 @@ font-style: oblique;
     width:60px;
   }
 }
+
+@media screen and (max-width:375px){
+  .profile_img{
+    top: calc(100vh - 90%);
+  }
+}
+@media screen and (max-width:360px){
+  .profile_img{
+    top: calc(100vh - 81%);
+  }
+}
+@media screen and (max-width:320px){
+  .profile_img{
+    top: calc(100vh - 85%);
+  }
+}
+@media screen and (max-width:420px){
+  .profile_img{
+    top: calc(100vh - 90%);
+  }
+}
+@media screen and (max-width:480px){
+  .profile_img{
+    top: calc(100vh - 89%);
+  }
+}
