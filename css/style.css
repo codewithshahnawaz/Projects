@@ -328,7 +328,7 @@ font-style: oblique;
 
 @media screen and (max-width:375px){
   .profile_img{
-    top: calc(100vh - 90%);
+    top: calc(100vh - 90% - 50px);
   }
 }
 @media screen and (max-width:360px){
@@ -338,16 +338,16 @@ font-style: oblique;
 }
 @media screen and (max-width:320px){
   .profile_img{
-    top: calc(100vh - 85%);
+    top: calc(100vh - 85% - 50px);
   }
 }
 @media screen and (max-width:420px){
   .profile_img{
-    top: calc(100vh - 90%);
+    top: calc(100vh - 90% - 50px);
   }
 }
 @media screen and (max-width:480px){
   .profile_img{
-    top: calc(100vh - 89%);
+    top: calc(100vh - 89% - 50px);
   }
 }
