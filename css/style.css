@@ -72,7 +72,7 @@
 }
 #aside #links ul li a {
   text-decoration: none;
-  color: #bbb;
+  color: var(--link-color);
   font-weight: bold;
   display: block;
   float: left;
@@ -81,7 +81,7 @@
   width: 35px;
   height: 35px;
   display: block;
-  background: #bbb;
+  background: var(--link-color);
   float: left;
   border-radius: 100%;
   margin-right: 10px;
@@ -208,6 +208,7 @@
   background: var(--component-background);
 display:flex;
 flex-direction: column;
+
 }
 #card-2 {
   height: 390px;
@@ -291,7 +292,7 @@ font-style: oblique;
   padding:20px;
   color: #fff;
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:990px) {
   .container{
     padding:5px
   }
@@ -324,11 +325,58 @@ font-style: oblique;
     height:60px;
     width:60px;
   }
+  #searchForm {
+    background: #fff;
+    height: 35px;
+    width: 95%;
+    border-radius: 1rem;
+    position: relative;
+  }
+  #search{
+    width: 93%;
+  }
+  .profile_img{
+    display: none;
+   }
+}
+@media (min-width:1000px) and (max-width:1200px){
+  #analytics{
+    flex-direction:column;
+  }
+  #left{
+    width: 100%;
+  }
+  #card-2{
+    margin-top: 10px;
+
+  }
+  #right{
+    margin-top: 10px;
+    width: 100%;
+  }
+  #searchForm {
+    background: #fff;
+    height: 35px;
+    width: 80%;
+    border-radius: 1rem;
+    position: relative;
+  }
+  #search{
+    width: 93%;
+  }
 }
 
 @media screen and (max-width:768px){
-  .profile_img{
-   display: none;
+  
+  #searchForm {
+    background: #fff;
+    height: 35px;
+    width: 88%;
+    border-radius: 1rem;
+    position: relative;
+  }
+  #search{
+    width: 90%;
   }
 }
 
