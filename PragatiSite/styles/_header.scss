@@ -1,8 +1,4 @@
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+
 .header {
   width: 100%;
   min-height: 150px;
@@ -33,15 +29,7 @@ img {
     font-weight:lighter;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-  .icons {
-    display: flex;
-    height: 30px;
-    width: 1.4%;
-    margin-right: 50px;
-    img:nth-child(2) {
-      margin-left: 10px;
-    }
-  }
+  
   .navbar {
     height: 70px;
     width: 100%;
@@ -86,6 +74,7 @@ img {
       margin-right: 30px;
       img {
         width: 50%;
+        height: auto;
       }
     }
   }
