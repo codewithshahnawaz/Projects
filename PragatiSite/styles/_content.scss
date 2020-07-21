@@ -1,0 +1,54 @@
+.main {
+  width: 100%;
+  height: auto;
+  .sellers {
+    min-height: 500px;
+    width: 100%;
+    text-align: center;
+    p {
+      padding: 50px;
+      font-size: 15pt;
+      text-transform: uppercase;
+    }
+    .imgCards {
+      max-width: 100%;
+      height: auto;
+      padding: 0 30px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      .card {
+        display: flex;
+        flex-direction: column;
+        .card-detail {
+          height:auto;
+          width: 100%;
+          .rating {
+            height: 50px;
+            display: flex;
+            width: 60%;
+            align-items: center;
+            justify-content: space-between;
+            
+            small {
+              margin-left: 12px;
+            //   text-align: center;
+              width: 100%;
+              color: #e59191;
+            //   justify-self: flex-end;
+            }
+          }
+          p {
+            font-size: 14px;
+            margin: 0;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+  .bannerBottom {
+    width: 100%;
+    padding-top: 30px;
+  }
+}
